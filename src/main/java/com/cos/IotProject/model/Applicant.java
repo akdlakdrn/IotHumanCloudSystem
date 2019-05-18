@@ -1,9 +1,13 @@
 package com.cos.IotProject.model;
 
+import java.time.LocalDate;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
+import org.hibernate.annotations.CreationTimestamp;
 
 import lombok.Data;
 
@@ -23,4 +27,9 @@ public class Applicant {
 	private String applicantRRN; // 주민등록번호
 	private String applicantGender;
 	private int applicantAge;
+	
+	@CreationTimestamp
+	private LocalDate applicantcreateDate;
+	@CreationTimestamp
+	private LocalDate applicantupdateDate;
 }

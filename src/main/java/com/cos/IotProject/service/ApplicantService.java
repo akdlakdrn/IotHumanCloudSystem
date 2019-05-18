@@ -4,10 +4,12 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.cos.IotProject.model.Applicant;
 import com.cos.IotProject.repository.ApplicantRepository;
 
+@Service
 public class ApplicantService {
 	
 	@Autowired
