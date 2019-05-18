@@ -1,5 +1,9 @@
 package com.cos.IotProject.repository;
 
-public interface EducationRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.cos.IotProject.model.Education;
+
+public interface EducationRepository extends JpaRepository<Education, Integer>{
 
 }

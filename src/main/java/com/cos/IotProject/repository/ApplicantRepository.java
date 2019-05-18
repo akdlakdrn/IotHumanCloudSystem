@@ -1,5 +1,8 @@
 package com.cos.IotProject.repository;
 
-public interface ApplicantRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.cos.IotProject.model.Applicant;
+public interface ApplicantRepository extends JpaRepository<Applicant, Integer>{
 
 }

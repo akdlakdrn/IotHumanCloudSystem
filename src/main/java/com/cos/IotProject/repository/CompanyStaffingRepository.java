@@ -1,5 +1,9 @@
 package com.cos.IotProject.repository;
 
-public interface CompanyStaffingRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.cos.IotProject.model.CompanyStaffing;
+
+public interface CompanyStaffingRepository extends JpaRepository <CompanyStaffing,Integer>{
 
 }

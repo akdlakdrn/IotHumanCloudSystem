@@ -1,5 +1,9 @@
 package com.cos.IotProject.repository;
 
-public interface JobRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.cos.IotProject.model.Job;
+
+public interface JobRepository extends JpaRepository<Job, Integer>{
 
 }
