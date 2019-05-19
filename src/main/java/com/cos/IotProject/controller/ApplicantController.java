@@ -39,6 +39,11 @@ public class ApplicantController {
 		return "applicant";
 	}
 	
+	@GetMapping("/join")
+	public String join() {
+		return "applicantjoin";
+	}
+	
 	@PostMapping("/create")//포스트맵핑을 이용하여 DB에담기위한 방식
 	public String create(Applicant applicant) {
 		applicantService.create(applicant);
@@ -61,7 +66,7 @@ public class ApplicantController {
 		}
 	}
 	
-	@GetMapping("/{num}")//자신의 정보를 호출하기 위한 부분
+	@GetMapping("/{num}")//자신의 정보를 호출하기 위한 부분 (회원정보 수정페이지)
 	public String applicantupDetail(@PathVariable int num, Model model) {
 		Optional<Applicant> temp = applicantService.applicantDetail(num);
 		//숙제 널처리하기(Optional)
