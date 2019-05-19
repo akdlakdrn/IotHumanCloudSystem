@@ -19,7 +19,7 @@ public class CompanyStaffing {
 	private int num;
 	
 	@Column(nullable = false, length =100)//null이 되면 안된다.
-	private String title;
+	private String companyTitle;
 
 	@ManyToOne
 	@JoinColumn(name="companyId")
