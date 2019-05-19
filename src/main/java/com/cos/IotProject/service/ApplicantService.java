@@ -20,7 +20,6 @@ public class ApplicantService {
 	}
 	
 	public List<Applicant> findAll(){
-		System.out.println();
 		return applicantRepository.findAll();
 	}
 	

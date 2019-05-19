@@ -17,6 +17,8 @@ import com.cos.IotProject.service.ApplicantService;
 
 
 
+
+
 @Controller
 @RequestMapping("/applicant")
 public class ApplicantController {
@@ -68,11 +70,11 @@ public class ApplicantController {
 		if(temp.isPresent()) {
 			Applicant applicant = temp.get();
 			model.addAttribute("applicant",applicant);
-			System.out.println("applicantupdate");
-			return "applicantupdate";
+			System.out.println("applicantDetail");
+			return "applicantDetail";
 		}else {
-			System.out.println("applicantupdateerror");
-			return "applicantupdateerror";
+			System.out.println("applicantDetailerror");
+			return "applicantDetailerror";
 		}
 	}
 	

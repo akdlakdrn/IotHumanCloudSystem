@@ -32,4 +32,78 @@ public class Applicant {
 	private LocalDate applicantcreateDate;
 	@CreationTimestamp
 	private LocalDate applicantupdateDate;
+	public int getNum() {
+		return num;
+	}
+	public void setNum(int num) {
+		this.num = num;
+	}
+	public String getApplicantID() {
+		return applicantID;
+	}
+	public void setApplicantID(String applicantID) {
+		this.applicantID = applicantID;
+	}
+	public String getApplicantPassword() {
+		return applicantPassword;
+	}
+	public void setApplicantPassword(String applicantPassword) {
+		this.applicantPassword = applicantPassword;
+	}
+	public String getApplicantName() {
+		return applicantName;
+	}
+	public void setApplicantName(String applicantName) {
+		this.applicantName = applicantName;
+	}
+	public String getApplicantEmail() {
+		return applicantEmail;
+	}
+	public void setApplicantEmail(String applicantEmail) {
+		this.applicantEmail = applicantEmail;
+	}
+	public String getApplicantAddr() {
+		return applicantAddr;
+	}
+	public void setApplicantAddr(String applicantAddr) {
+		this.applicantAddr = applicantAddr;
+	}
+	public String getApplicantPhone() {
+		return applicantPhone;
+	}
+	public void setApplicantPhone(String applicantPhone) {
+		this.applicantPhone = applicantPhone;
+	}
+	public String getApplicantRRN() {
+		return applicantRRN;
+	}
+	public void setApplicantRRN(String applicantRRN) {
+		this.applicantRRN = applicantRRN;
+	}
+	public String getApplicantGender() {
+		return applicantGender;
+	}
+	public void setApplicantGender(String applicantGender) {
+		this.applicantGender = applicantGender;
+	}
+	public int getApplicantAge() {
+		return applicantAge;
+	}
+	public void setApplicantAge(int applicantAge) {
+		this.applicantAge = applicantAge;
+	}
+	public LocalDate getApplicantcreateDate() {
+		return applicantcreateDate;
+	}
+	public void setApplicantcreateDate(LocalDate applicantcreateDate) {
+		this.applicantcreateDate = applicantcreateDate;
+	}
+	public LocalDate getApplicantupdateDate() {
+		return applicantupdateDate;
+	}
+	public void setApplicantupdateDate(LocalDate applicantupdateDate) {
+		this.applicantupdateDate = applicantupdateDate;
+	}
+	
+	
 }
